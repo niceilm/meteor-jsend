@@ -1,6 +1,6 @@
 Package.describe({
   name: 'flynn:jsend',
-  version: '0.0.3',
+  version: '0.0.4',
   // Brief, one-line summary of the package.
   summary: 'jsend',
   // URL to the Git repository containing the source code for this package.
@@ -11,7 +11,7 @@ Package.describe({
 });
 
 Package.onUse(function(api) {
-  api.versionsFrom('1.2.0.2');
+  api.versionsFrom('METEOR@1.2');
   api.export('JSEND', "server");
   api.use('check');
   api.addFiles('jsend.js', 'server');
